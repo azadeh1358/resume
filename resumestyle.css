@@ -1,0 +1,76 @@
+/*remove default styles*/
+*,
+*::before, *::after {padding: 0;margin:0;}
+
+a{
+  text-decoration: none;
+
+}
+/* main styles */
+p, a, h1, h3 {font-family: 'Roboto Condensed', sans-serif;}
+div.logo-nav,
+section#about,
+section#skills {
+  padding: 10px 50px;
+}
+/* logo navigation style */
+div.logo-nav{background-color: #228bdc;
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+}
+div.logo, nav#main-nav > a {color: #fff;}
+
+nav#main-nav > a {
+  margin-left: 15px;
+}
+
+/* paralax1 style */
+section#parallax1 {
+  background: url('https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_1280.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150px;
+}
+
+section#parallax2 {
+  background: url('https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_1280.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150px;
+}
+
+/* about style */
+section#about {
+  padding: 10px 50px;
+}
+h1.section-title {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+h3.section-headline {
+  font-size: 25px;
+  color: #228bdc;
+  text-transform: lowercase;
+}
+p.section-info {
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+
+/*  ---------------------------------*/
+/* media queries */
+/*  ---------------------------------*/
+@media (max-width: 660px) {
+  div.logo-nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  div.logo p {
+    font-size: 50px;
+  }
+  nav#main-nav > a {font-size: 30px;}
+}
+/*  */
